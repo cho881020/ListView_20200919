@@ -36,6 +36,11 @@ class StudentAdapter(
         studentNameTxt.text = student.name
         studentAddressTxt.text = student.address
 
+
+        val koreanAge = 2020 - student.birthYear + 1
+
+        studentAgeTxt.text = "(${koreanAge}세)"
+
         return row
     }
 
